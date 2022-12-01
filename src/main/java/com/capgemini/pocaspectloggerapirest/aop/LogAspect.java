@@ -17,8 +17,6 @@ public class LogAspect {
     private static final Logger LOGGER = 
     LoggerFactory.getLogger(LogAspect.class);
 
-    // @Pointcut("within(com.capgemini.pocaspectloggerapirest.api.rest..*)"
-    //           + "|| @annotation(com.capgemini.pocaspectloggerapirest.aop.annotation.LogAround)")
     @Pointcut("within(com.capgemini.pocaspectloggerapirest.api.rest.ClientRestController)")
     public void restPackagePointcut() {
         // Method is empty as this is just a Pointcut,
